@@ -1,0 +1,31 @@
+.header-logo {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+}
+
+.header-text {
+  text-align: center;
+  font-size: 6vw;
+  position: absolute;
+  top: 27vh;
+  left: 31vw;
+  font-weight: 700;
+  background: -webkit-linear-gradient(#ddd, #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 9px 10px rgba(50, 50, 50, 0.6)
+
+}
+
+@media #{$media-desktop} {
+  .header-text {
+    top: 19vh;
+  }
+}
+
+@media #{$media-tablet} {
+  .header-text {
+    top: 6.5vh;
+  }
+}

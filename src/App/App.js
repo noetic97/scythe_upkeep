@@ -12,6 +12,12 @@ class App extends Component {
             Turn Upkeeper
           </p>
         </header>
+        <main>
+          
+        </main>
+        <footer>
+          
+        </footer>
       </div>
     );
   }
