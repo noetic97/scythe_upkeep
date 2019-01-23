@@ -1,23 +1,26 @@
 import React, { Component } from 'react';
-import headerLogo from '../assets/images/scythe_header.jpg'
+import Header from './components/Header';
+import Footer from './components/Footer';
 import '../styles/main.scss';
 
 class App extends Component {
+  constructor() {
+    super()
+    this.state = {
+      currentTurn: 0,
+      collectMoney: false,
+      adjustPopularity: false,
+      adjustStrength: false
+    }
+  }
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={headerLogo} className="header-logo" alt="logo" />
-          <p className="header-text">
-            Turn Upkeeper
-          </p>
-        </header>
-        <main>
+        <Header />
+        <main className="content">
           
         </main>
-        <footer>
-          
-        </footer>
+        <Footer />
       </div>
     );
   }

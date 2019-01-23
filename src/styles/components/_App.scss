@@ -1,3 +1,13 @@
 body {
   font-family: 'Kanit', sans-serif;
 }
+
+.content {
+  min-height: calc(100vh - 420px);
+}
+
+@media #{$media-tablet} {
+  .content {
+    min-height: calc(100vh - 245px);
+  }
+}
